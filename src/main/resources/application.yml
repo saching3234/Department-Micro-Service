@@ -29,5 +29,13 @@ spring:
 #  hostname: localhost      
   
   
+#Redis properties
+    cache:
+        type: redis
+    redis:
+        host: redis_host
+        password: redis_password
+        port: 6379  
+  
   
   

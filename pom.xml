@@ -61,15 +61,31 @@
 		<artifactId>spring-cloud-starter-sleuth</artifactId>
 	</dependency>	
  end of zipkin and sleuth dep
-    
+   -->
 
 	
-	Eureka client
-	<dependency>
+	<!--  Eureka client -->
+<!-- 	<dependency>
       <groupId>org.springframework.cloud</groupId>
       <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-    </dependency>	-->	
+    </dependency>    --> 
+    
+    <!-- Redis cache dependency -->
+	<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-redis</artifactId>
+	</dependency>
+	
+	<dependency>
+			<groupId>redis.clients</groupId>
+			<artifactId>jedis</artifactId>
+			<version>3.3.0</version>
+    </dependency>
+    
 	</dependencies> 
+	
+	
+	
 	
 	<!-- dependency management -->	
 	
@@ -85,10 +101,6 @@
     </dependencies>
   </dependencyManagement>
 	
-	
-	
-	
-
 	<build>
 		<plugins>
 			<plugin>

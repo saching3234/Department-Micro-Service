@@ -78,7 +78,7 @@ public class DepartmentServiceTest {
 	    		 .build();
 		//return the department because in delete method we are calling the find by id method 
 		when(departmentRepo.findById(dummyDepartment.getDepartmentId())).thenReturn(Optional.of(dummyDepartment));
-		departmentService.deleteDepartment(dummyDepartment);
+		departmentService.deleteDepartment(1l);
 		verify(departmentRepo,times(1)).delete(dummyDepartment);          	
 	}
 }
