@@ -15,27 +15,30 @@ spring:
     show-sql: 'true'
   application:
     name: DEPARTMENT-SERVICE 
-#  zipkin:
-#   base-url: http://localhost:9411/  
-    
-#eurka client settings
-#eureka:
-# client:
-#  register-with-eureka: true
-#  fetch-registry: true
-#  service-url:
-#   defaultZone: http://localhost:8761/eureka/
-# instance:
-#  hostname: localhost      
-  
-  
+
 #Redis properties
     cache:
         type: redis
     redis:
         host: redis_host
         password: redis_password
-        port: 6379  
+        port: 6379 
+
+#  zipkin:
+#   base-url: http://localhost:9411/  
+    
+#eurka client settings
+eureka:
+ client:
+  register-with-eureka: true
+  fetch-registry: true
+  service-url:
+   defaultZone: http://localhost:8761/eureka/
+ instance:
+  hostname: localhost      
+  
+  
+ 
   
   
   
